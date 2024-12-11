@@ -12,7 +12,7 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 
 app.get("/", (request, response) => {
-  response.send("Hello from sever");
+  response.render("index");
 });
 
 app.listen(PORT, () => {
